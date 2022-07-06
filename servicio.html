@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Taller de Costura Villa Bonita</title>
+    <title>Solartec - Renewable Energy Website Template</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -30,15 +30,13 @@
 
     <!-- Hoja de estilo de la plantilla -->
     <link href="css/style.css" rel="stylesheet">
-
-    <script src="js/correo.js"></script>
 </head>
 
 <body>
     <!-- Inicio del spinner -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Cargando...</span>
+            <span class="sr-only">Loading...</span>
         </div>
     </div>
     <!-- Final del spinner -->
@@ -85,7 +83,7 @@
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.html" class="nav-item nav-link">Página Principal</a>
                 <a href="about.html" class="nav-item nav-link">Sobre nosotros</a>
-                <a href="servicio.html" class="nav-item nav-link">Servicios</a>
+                <a href="service.html" class="nav-item nav-link active">Servicios</a>
                 <a href="project.html" class="nav-item nav-link">Proyectos</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
@@ -97,7 +95,7 @@
                         <a href="404.html" class="dropdown-item">404 Page</a>
                     </div>
                 </div>
-                <a href="contact.html" class="nav-item nav-link active">Contacto</a>
+                <a href="contacto.html" class="nav-item nav-link">Contacto</a>
             </div>
         </div>
     </nav>
@@ -107,7 +105,7 @@
     <!-- Inicio del page header -->
     <div class="container-fluid page-header py-5 mb-5">
         <div class="container py-5">
-            <h1 class="display-3 text-white mb-3 animated slideInDown">Contáctanos</h1>
+            <h1 class="display-3 text-white mb-3 animated slideInDown">Servicios</h1>
             <nav aria-label="breadcrumb animated slideInDown">
             </nav>
         </div>
@@ -115,55 +113,90 @@
     <!-- Final del page header -->
 
 
-    <!-- Inicio del body de contacto -->
-    <div class="container-fluid bg-light overflow-hidden px-lg-0" style="margin: 6rem 0;">
-        <div class="container contact px-lg-0">
-            <div class="row g-0 mx-lg-0">
-                <div class="col-lg-6 contact-text py-5 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="p-lg-5 ps-lg-0">
-                        <h6 class="text-primary">¡Contáctanos!</h6>
-                        <h1 class="mb-4">Siéntete libre en contactarnos cuando lo desees</h1>
-                        <p class="mb-4">En este apartado encontrarás uno de los medios para contactarte con nosotros, de igual manera contamos con Facebook, Instagram y WhatsApp o si prefieres visitar el local, podrás encontrar la dirección exacta del mismo en el mapa.</p>
-                        <form action= "https://formspree.io/f/xyyoqejr" method="POST">
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" name="Nombre" id="name" placeholder="Your Name">
-                                        <label for="name">Nombre Completo</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control" name= "Email" id="email" placeholder="Your Email">
-                                        <label for="email">Correo Electrónico</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a message here" name="Mensaje" id="message" style="height: 100px"></textarea>
-                                        <label for="message">Mensaje</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button type = "submit" class="btn btn-primary rounded-pill py-3 px-5" type="submit" onclick="sendEmail();">Enviar Mensaje</button>
-                                </div>
-                            </div>
-                        </form>
+    <!-- Inicio del body de servicio -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h6 class="text-primary">Nuestros servicios</h6>
+                <h1 class="mb-4">Todos nuestros servicios se realizan de la mejor manera</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/abrigo2.jpg" alt="">
+                        <div class="position-relative p-4 pt-0">
+                            <div class="service-icon">
+                                <i class="fa fa-mitten fa-3x"></i>
+                            </div> 
+                            <h4 class="mb-3">Confección de abrigos</h4>
+                            <p>Ofrecemos confección de abrigos a su talla y gusto.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6 pe-lg-0" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <iframe class="position-absolute w-100 h-100" style="object-fit: cover;"
-                        src="https://maps.google.com/maps?q=universidad%20tecnica%20nacional,%20alajuela&t=&z=19&ie=UTF8&iwloc=&output=embed"
-                        frameborder="0" allowfullscreen="" aria-hidden="false"
-                        tabindex="0"></iframe>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/gabachas.jpg" alt="">
+                        <div class="position-relative p-4 pt-0">
+                            <div class="service-icon">
+                                <i class="fa fa-tshirt fa-3x"></i>
+                            </div>
+                            <h4 class="mb-3">Confección de gabachas</h4>
+                            <p>Ofrecemos confección de gabachas para hospitales, labororatorios, entre otros.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/uniformes.jpg" alt="">
+                        <div class="position-relative p-4 pt-0">
+                            <div class="service-icon">
+                                <i class="fa fa-user-tie fa-3x"></i>
+                            </div>
+                            <h4 class="mb-3">Confección de uniformes</h4>
+                            <p>Ofrecemos confección de uniformes para niños de kínder y escuela.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/panta2.jpg" alt="">
+                        <div class="position-relative p-4 pt-0">
+                            <div class="service-icon">
+                                <i class="fa fa-drafting-compass fa-3x"></i>
+                            </div>
+                            <h4 class="mb-3">Confección de pantalones</h4>
+                            <p>Ofrecemos confección de pantalones a su gusto.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/corteropa.jpg" alt="">
+                        <div class="position-relative p-4 pt-0">
+                            <div class="service-icon">
+                                <i class="fa fa-cut fa-3x"></i>
+                            </div>
+                            <h4 class="mb-3">Cortes</h4>
+                            <p>Ofrecemos corte de pantalones, camisas u otras prendas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/parches.jpg" alt="">
+                        <div class="position-relative p-4 pt-0">
+                            <div class="service-icon">
+                                <i class="fa fa-window-close fa-3x"></i>
+                            </div>
+                            <h4 class="mb-3">Implementación de paches</h4>
+                            <p>Ofrecemos parches a su gusto para camisas, bolsos, pantalones, entre otros.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Final del body de contacto -->
-
+    <!-- Final del body de servicio -->
 
     <!-- Inicio del footer -->
     <div class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
@@ -231,7 +264,7 @@
 
 
     <!-- Ir arriba -->
-    <a href="contacto.html" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="service.html" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 
     <!-- Librerias de JavaScript -->
